@@ -1,81 +1,451 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flores Jhonny</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
-    <!-- Materialize.css -->
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+	
+	</head>
+	<body>
+	  <div class="svg-wrap">
     
-</head>
-<body>
+    <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
+      </svg>
 
-    <div class="container">
-        <div class="navbar">
-                    
-            <nav>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </nav>
-            
-        </div>
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
+      </svg>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header"></a>
+          </div><!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li> 
+              <li><a href="#portfolio">Projects</a></li>
+                           
+             
+			 
+			  <li><a href="#info">Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+     <!---->
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+          
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <p>technical knowledge</p>
+                    </div>
+
+                  </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+            </div> <!-- /.overlay -->
+          </div> <!-- /.image-slide -->
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+             
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"images/slide-1.jpg",
+                              title : "Software Developer",
+							                author : "Templatestock"
+                            },
+                            {
+                              bigImage :"images/slide-1.jpg",
+                              title : "Hardware & Software",
+							                author : "Templatestock"
+                            },
+                            {
+                              bigImage :"images/slide-1.jpg",
+                              title : "Manage Office",
+							                author : "Templatestock"
+                            },
+                            {
+                              bigImage :"images/slide-1.jpg",
+                              title : "NETWORKS, EMAIL, INTERNET",
+							                author : "Templatestock"
+                            },
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 200, speedOut :200, easingIn : mina.easeinout});
+            loaderSVG.show()
+        </script>
+
+      </div> 
+    </section>
+
+    <!-- HEADER END -->
+ <!-- ABOUT -->
+
+ <section id="about" class="light">
+  <header class="title">
+    <h2>About <span>Me</span></h2>
+    <p> <strong>Technical knowledge in:</strong></p>
+  </header>
+
+  <div class="container">
+    <div class="row table-row">
+      <div class="col-sm-6 hidden-xs">
         
+        <div class="about-content left animated" data-animate="fadeInLeft">
+          <div class="about-icon"><i class="fa fa-code"></i></div>
+          <div class="about-detail">
+            <h4>Programming Languages</h4>
+            <p>Java, JavaScript, Visual basic .Net,
+              C++, Go, PHP. (Html, CSS)..</p>
+          </div>
+        </div>
 
-        <div class="row">
-            <div class="col">
-                <h1>Actualizando Portafolio</h1>
-                <h1></h1>
-                <p></p>
-                    
-                <button type="button">Download CV</button>
+        <div class="about-content left animated" data-animate="fadeInLeft">
+          <div class="about-icon"><i class="fa fa-codepen"></i></div>
+          <div class="about-detail">
+            <h4>IDE</h4>
+            <p>Eclipse, Visual Studio, Netbeans.
+              .</p>
+          </div>
+        </div>
+
+        <div class="about-content left animated" data-animate="fadeInLeft">
+          <div class="about-icon"><i class="fa fa-file"></i></div>
+          <div class="about-detail">
+            <h4>EDITOR'S TEXT</h4>
+            <p>Visual Studio Code.</p>
+          </div>
+        </div>
+
+        <div class="about-content left animated" data-animate="fadeInLeft">
+          <div class="about-icon"><i class="fa fa-cloud"></i></div>
+          <div class="about-detail">
+            <h4>Content Management System</h4>
+            <p>Joomla, GoodBarber.</p>
+          </div>
+        </div>
+
+        <div class="about-content left animated" data-animate="fadeInLeft">
+          <div class="about-icon"><i class="fa fa-code"></i></div>
+          <div class="about-detail">
+            <h4>Framework</h4>
+            <p>ZK.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="section-content">
+          
+
+          
+
+          <div class="about-content left animated" data-animate="fadeInLeft">
+            <div class="about-icon"><i class="fa fa-database"></i></div>
+            <div class="about-detail">
+              <h4>Database</h4>
+              <p>SQL Server, PostgresSql, MySql.</p>
             </div>
-       
-            <div class="grid-container">
-                    <div class="grid-item" style="
-                            background-image: url('./imagen/hmtl.png');
-                        "></div>
-                
-                    <div class="grid-item wide" style="
-                            background-image: url('./imagen/css.jpg');
-                        "></div>
-                    <div class="grid-item" style="
-                            background-image: url('./imagen/javascript.png');
-                        "></div>
-                    <div class="grid-item" style="
-                            background-image: url('./imagen/java.jpg');
-                        "></div>
-                    <div class="grid-item" style="
-                            background-image: url('./imagen/php.png');
-                        "></div>
-                    <div class="grid-item wide" style="
-                            background-image: url('./imagen/visualstudio.png');
-                        "></div>
-                
-                    
-                    <div class="grid-item" style="
-                            background-image: url('./imagen/mysql.jfif');
-                        "></div>
-                    <div class="grid-item" style="
-                            background-image: url('./imagen/posgrest.png');
-                        "></div>
-                    <div class="grid-item wide" style="
-                    background-image: url('./imagen/sql.png');
-                "></div>
-                
-                    
-             </div>  
-        
-       
-        </div>
+          </div>
 
-        
-  </div>
-  
+          <div class="about-content left animated" data-animate="fadeInLeft">
+            <div class="about-icon"><i class="fa fa-book"></i></div>
+            <div class="about-detail">
+              <h4>Administrative Knowledge</h4>
+              <p>Ofimática (Word, Excel, Project,
+                Power Point), herramientas UML,
+                Contabilidad, administrar oficina.</p>
+            </div>
+          </div>
+
+
+          <div class="about-content left animated" data-animate="fadeInLeft">
+            <div class="about-icon"><i class="fa fa-terminal"></i></div>
+            <div class="about-detail">
+              <h4>Technical knowledge</h4>
+              <p>Mantenimiento hardware/Software,
+                Servicios de red,
+                Transmisión con herramienta OBS.
+                Arquitectura de Software.
+                Terminal y Lineas de Comandos.
+                </p>
+            </div>
+          </div>
+
+
+          <div class="about-content left animated" data-animate="fadeInLeft">
+            <div class="about-icon"><i class="fa fa-desktop"></i></div>
+            <div class="about-detail">
+              <h4>Collaboration Tools
+                Projects</h4>
+              <p>Git & Github, Slack, Jira</p>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </div> <!-- /.row table-row -->
+  </div> <!-- /.container -->
+</section>
+  <!-- PORTFOLIO -->
+
+  <section id="portfolio" class="light">
+    <header class="title">
+      <h2>Projects</h2>
+      <p>Descriptions of some software projects that I have done.</p>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <ul id="filters" class="list-inline">
+          <li data-filter="all" class="filter">All</li>
+          <li data-filter=".web" class="filter">Web</li> 
+          <li data-filter=".desk" class="filter">Desk</li> 
+          <li data-filter=".app" class="filter">APP</li> 
+          <li data-filter=".practices" class="filter">Practices</li> 
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="container-portfolio">
+          <!-- PORTFOLIO OBJECT -->
+          <script type="text/javascript">
+          var portfolio = [
+                 
+                  {
+                    category : "web",
+                    image : "images/imagen_gad.jpg",
+                    title : "GAD<span> Anconcito</span>",
+                    link : "http://www.anconcito.gob.ec/",
+                    text : "Joomla, Html, CSS."
+                  },
+                  {
+                    category : "app",
+                    image : "images/imagen_app.jpg",
+                    title : "APP <span>Anconcito Es..</span>",
+                    link : "https://play.google.com/store/apps/details?id=com.goodbarber.anconcito&hl=es_EC&gl=US",
+                    text : "GoodBarber"
+                  },
+                  {
+                    category : "desk",
+                    image : "images/imagen_rest.jpg",
+                    title : "Proyecto <span>Restaurant</span>",
+                    link : "https://github.com/JhonnyDark10/Proyecto-Restaurant",
+                    text : "Visual Basic & SQL Server."
+                  },
+                  {
+                    category : "web",
+                    image : "images/imagen_puerto.jpg",
+                    title : "Proyecto <span>Puerto</span>",
+                    link : "#none",
+                    text : "Java & MySQL."
+                  },
+                  {
+                    category : "web",
+                    image : "images/imagen_colegio.jpg",
+                    title : "Página <span>Informativa</span>",
+                    link : "https://github.com/JhonnyDark10/PaginaWebInformativa",
+                    text : "Html, CSS, Javascript."
+                  },
+                  {
+                    category : "practices",
+                    image : "images/slide-1.jpg",
+                    title : "Practicas",
+                    link : "https://github.com/JhonnyDark10?tab=repositories",
+                    text : "Java, Go, PHP, .Net."
+                  },
+                  {
+                    category : "desk",
+                    image : "images/sistema_plan.jpg",
+                    title : "Sistema Planificación de tareas",
+                    link : "https://github.com/JhonnyDark10/Sistema-planificacion-de-tareas",
+                    text : "Visual Basic & MySQL."
+                  }
+              ];
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+	
+	
+	  
+
+
+    <!-- TEAM -->
+<div>
+
+</div>
     
-</body>
+         
+	    <!-- INFO -->
+
+    <section id="info" class="dark">
+      <header class="title">
+        <h2>Me <span>Experience</span></h2>
+        <p>System Engineer, with the capacity and responsibility to manage office, operate computer equipment, develop
+          web and desktop applications with ease of adaptation to the environment, technology and teamwork.</p>
+      </header>
+
+      <div class="container experties">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="95%"></span><em>Development</em></li>
+                <li><span class="percentage" data-value="80%"></span><em>teamwork</em></li>
+               
+                <li><span class="percentage" data-value="95%"></span><em>Hardware & Software</em></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="75%"></span><em>Manage Office</em></li>
+                <li><span class="percentage" data-value="90%"></span><em>Network & Internet</em></li>
+                <li><span class="percentage" data-value="95%"></span><em>Analysis and Problem Solving</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>	
+	
+
+    <!-- FOOTER CONTACT -->
+
+     <section id="contact" class="separator blue">
+     
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="0">
+              <div class="counter-icon">
+                <i class="fa fa-linkedin"></i>
+              </div>
+              <div class="counter-content">
+               
+                <small > <a  href="https://www.linkedin.com/in/jhonny-flores-pozo-26622948/">Linkedin</a> </small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="500">
+              <div class="counter-icon">
+                <i class="fa fa-github"></i>
+              </div>
+              <div class="counter-content">
+                <small > <a  href="https://github.com/JhonnyDark10">GitHub</a> </small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1000">
+              <div class="counter-icon">
+                <i class="fa fa-twitter"></i>
+              </div>
+              <div class="counter-content">
+                <small > <a  href="https://twitter.com/Jhonny_Dark10">Twitter</a> </small>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+              <div class="counter-icon">
+                <i class="fa fa-inbox"></i>
+              </div>
+              <div class="counter-content">
+               
+                <a href="flores_dark10@outlook.es?Subject=InteresadoEnSusServicios">Contactar por correo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    
+
+   </div><!-- /.container-fluid -->
+    
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
 </html>
